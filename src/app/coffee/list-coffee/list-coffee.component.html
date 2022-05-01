@@ -1,1 +1,39 @@
-<p>list-coffee works!</p>
+
+<div class="container">
+  <br>
+  <div class="title">
+    <h2 face="Indie Flower">El aroma mágico</h2>
+  </div>
+
+  <hr>
+  <img src="\assets\images\cafe.png" alt="cafe" class="img-fluid">
+  <hr>
+  <table class="table">
+    <thead class="table-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Tipo</th>
+        <th scope="col">Región</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let coffee of coffees; index as i">
+        <th scope="row">{{i + 1}}</th>
+        <td>{{coffee.nombre}}</td>
+        <td>{{coffee.tipo}}</td>
+        <td>{{coffee.region}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <div>
+    <p>Total cafe de Origen: {{counterCoffeeOrigin}}</p>
+    <p>Total cafe Blend: {{counterCoffeeBlent}}</p>
+  </div>
+
+
+  <div class="text-center">
+    <p>Contact us: +57 3102105253 - info@elaromamagico.com - @elaromamagico</p>
+  </div>
+</div>
+

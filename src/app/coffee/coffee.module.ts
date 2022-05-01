@@ -10,6 +10,9 @@ import { ListCoffeeComponent } from './list-coffee/list-coffee.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    ListCoffeeComponent
   ]
 })
 export class CoffeeModule { }

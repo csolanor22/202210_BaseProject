@@ -13,7 +13,7 @@ export class CoffeeService {
 
   constructor(private http: HttpClient) { }
 
-  getCoffeeList(): Observable<Coffee[]>{
+  getCoffeeList(){
     return this.http.get<Coffee[]>(`${this.apiUrl}`);
   }
 }
